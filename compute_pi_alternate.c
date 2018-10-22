@@ -1,7 +1,7 @@
 // The algorithm is based on Trapezium rule. If f(x)=4*(1-x^2)^(1/2), then PI is the intergral of f(x) from 0 to 1
 
 #include <stdio.h>
-#include<math.h>
+#include <math.h>
 #include <mpi.h>
 
 #define N 1E7
@@ -27,7 +27,7 @@ int main (int argc, char* argv[])
     if (rank==0)
     {
         pi=4*d*sum;
-        printf("np=%d;    Time=%fs;    PI=%lf\n", size, end-begin, pi);
+        printf("np=%d;    Time=%fs;    PI=%f\n", size, end-begin, pi);
     }
     MPI_Finalize();
     return 0;

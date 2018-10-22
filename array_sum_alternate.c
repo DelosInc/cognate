@@ -5,7 +5,6 @@
 
 float *create_rand_nums(int num_elements) {
     float *rand_nums = (float *)malloc(sizeof(float) * num_elements);
-    assert(rand_nums != NULL);
     int i;
     for (i = 0; i < num_elements; i++) {
         rand_nums[i] = (rand() / (float)RAND_MAX);
@@ -47,7 +46,7 @@ int main(int argc, char** argv) {
     MPI_Gather(&sub_sum, 1, MPI_FLOAT, sub_sums, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
     if (world_rank == 0) {
         float sum = compute_sum(sub_sums, world_size);
-        printf("Sum of all elements is %f\n", avg);
+        printf("Sum of all elements is %f\n", sum);
     }
     if (world_rank == 0) {
         free(rand_nums);
