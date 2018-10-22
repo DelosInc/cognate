@@ -3,19 +3,9 @@
 #include <mpi.h>
 #include <time.h>
 
-void showVector (int *v, int n, int id);
 int *merge (int *A, int asize, int *B, int bsize);
 void swap (int *v, int i, int j);
 void merge_sort (int *A, int min, int max);
-
-void showVector (int *v, int n, int id) {
-	int i;
-	printf ("%d: ",id);
-	for (i = 0; i < n; i++) {
-		printf ("%d ", v[i]);
-	}
-	printf('\n');
-}
 
 int *merge (int *A, int asize, int *B, int bsize) {
 	int ai = 0, bi = 0, ci = 0, i;
