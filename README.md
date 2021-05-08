@@ -4,6 +4,6 @@ Cognate is a Raspberry Pi compute cluster developed in C using MPI to paralleliz
 
 # Contributors
 
-1. [Benin Godfrey](https://github.com/beningodfrey4)
-2. [Nithin R](https://github.com/thebinarybot)
-3. [Shashank Narayanan P](https://github.com/shashank152k)
+- [Benin Godfrey](https://github.com/beningodfrey4)
+- [Nithin R](https://github.com/thebinarybot)
+- [Shashank Narayanan P](https://github.com/shashank152k)
